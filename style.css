@@ -1,0 +1,89 @@
+.carousel{
+    height: 100vh;
+}
+.p-fixed{
+    position: fixed;
+    z-index: 100;
+    background-color: transparent;
+    box-shadow: none;
+
+}
+.carousel-item{
+    padding-top: 25%;
+}
+.nav2-item{
+    height: 300px; 
+    background-size: cover;
+    filter: brightness(0.3);
+    transition-duration: 1s;
+}
+.nav2-item:hover{
+    filter: brightness(0.6);
+}
+.center-text-nav2{
+    position: absolute; 
+    width: 100%; 
+    z-index: 10; 
+    text-align: center; 
+    top: 50%; 
+    -ms-transform: translateY(-50%); 
+    transform: translateY(-50%);
+    font-size: 30px;
+    text-decoration: none;
+}
+.center-text-nav2:hover{
+    text-decoration: underline;
+}
+
+.a-news{
+    color:black;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 1.5rem;
+}
+.a-news:hover{
+    color: gold ;
+}
+.time{
+    color: #999999;
+    margin: 10px 0px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    height: 15px;
+
+}
+/* Thuong hieu hang dau */
+.title-1 {
+    font-size: 36px;
+    margin: 30px 0;
+    display: inline-block;
+    padding: 20px 40px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center!important;
+    text-transform: uppercase;
+}
+.our-brand {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 40px;
+    position: relative;
+    background-color: lightgray;
+}
+.our-brand .stt{
+        font-size: 200px;
+        color: #d4c0a5;
+        position: absolute;
+        line-height: 150px;
+        font-weight: 300;
+        box-sizing: border-box;   
+}
+.our-brand .d-inline-block {
+    padding-left: 120px;
+}
+.d-inline-block {
+    display: inline-block!important;
+}
