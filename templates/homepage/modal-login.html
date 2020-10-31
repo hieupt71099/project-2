@@ -1,0 +1,25 @@
+<!-- Modal Structure -->
+<div id="modal-login" class="modal ">
+  <form id="login-form" method="POST">
+    <div class="modal-content">
+      <h4>Login</h4>
+      <span class="warning-msg" style="color: red;padding-left: 0.75rem;"></span>
+      <span class="success-msg" style="color: green;"></span>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate" required>
+          <label for="password">Password</label>
+        </div>
+        <a class="modal-trigger modal-close" href="#modal-signup" style="margin-left: auto;">Bạn chưa có tài khoản? Đăng
+          kí ngay!</a>
+      </div>
+    </div>
+    <div class="modal-footer" style="border-top: 1px solid rgba(0,0,0,0.1)">
+      <button id="login-submit" type="submit" class=" waves-effect waves-green btn-flat">Đăng nhập</button>
+    </div>
+  </form>
+</div>
