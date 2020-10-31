@@ -4,6 +4,8 @@
     background-position: center top;
     background-repeat: no-repeat;
     position: relative;
+    height: 150px;
+    object-fit: cover;
 }
 
 #Subheader .title {

@@ -1,0 +1,165 @@
+@media (min-width: 768px){
+#SECTION27 {
+    height: 723.042px;
+}}
+@media (min-width: 768px){
+#SECTION27 > .ladi-section-background {
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: content-box;
+    background-image: url("https://w.ladicdn.com/s1440x723/5c3ca4d8de10255d1ab95941/artboard-103x-20200308093443.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+}}
+
+.ladi-section .ladi-section-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+@media (min-width: 768px){
+#SECTION27 > .ladi-overlay {
+    background-color: rgba(133, 79, 0, 0.07);
+}}
+
+.ladi-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+@media (min-width: 768px){
+.ladi-section .ladi-container {
+    width: 960px;
+}}
+
+.ladi-container {
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+}
+
+@media (min-width: 768px){
+#IMAGE214 {
+    width: 5px;
+    height: 5px;
+    top: 677px;
+    left: 381.5px;
+}}
+
+.ladi-element {
+    position: absolute;
+}
+
+.ladi-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+@media (min-width: 768px){
+#IMAGE214 > .ladi-image > .ladi-image-background {
+    width: 5px;
+    height: 5px;
+    top: 0px;
+    left: 0px;
+    background-image: url("https://w.ladicdn.com/uploads/images/19675a18-3d0a-43c0-926d-49605826dda9.png");
+}}
+
+.ladi-image .ladi-image-background {
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: content-box;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+@media (min-width: 768px){
+#IMAGE418 {
+    width: 669.795px;
+    height: 758.042px;
+    top: -76.042px;
+    left: 545.205px;
+}}
+
+@media (min-width: 768px){
+#IMAGE418 > .ladi-image > .ladi-image-background {
+    width: 669.795px;
+    height: 758.042px;
+    top: 0px;
+    left: 0px;
+    background-image: url("https://w.ladicdn.com/s1000x1100/5c3ca4d8de10255d1ab95941/artboard-83x-20200308093553.png");
+}}
+
+@media (min-width: 768px){
+#HEADLINE420 {
+    width: 576px;
+    top: 266px;
+    left: 41px;
+}}
+
+@media (min-width: 768px){
+#HEADLINE420 > .ladi-headline {
+    font-family: "Roboto Slab", serif;
+    color: rgb(81, 165, 176);
+    font-size: 33px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.4;
+}}
+
+.ladi-headline {
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (min-width: 768px){
+#IMAGE416 {
+    width: 579.824px;
+    height: 132.811px;
+    top: 0px;
+    left: 0px;
+}}
+
+@media (min-width: 768px){
+#IMAGE416 > .ladi-image > .ladi-image-background {
+    width: 579.824px;
+    height: 132.811px;
+    top: 0px;
+    left: 0px;
+    background-image: url("https://w.ladicdn.com/s900x450/5c3ca4d8de10255d1ab95941/asset-23x-20200308093307.png");
+}}
+
+@media (min-width: 768px){
+#IMAGE417 {
+    width: 693.495px;
+    height: 497.466px;
+    top: 224.576px;
+    left: 648.748px;
+}}
+
+@media (min-width: 768px){
+#IMAGE417 > .ladi-image > .ladi-image-background {
+    width: 693.495px;
+    height: 503.359px;
+    top: 0px;
+    left: 0px;
+    background-image: url("https://w.ladicdn.com/s1000x850/5c3ca4d8de10255d1ab95941/asset-13x-20200308093307.png");
+}}
