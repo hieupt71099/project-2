@@ -1,14 +1,23 @@
 <nav class="p-fixed">
     <div class="nav-wrapper ">
         <a href="/" style="height: 100%" class="brand-logo"><img style="height: 100%;"
-                src="https://w.ladicdn.com/s500x550/5c3ca4d8de10255d1ab95941/asset-33x-20200308093307.png"
-                alt=""></a>
+                src="https://w.ladicdn.com/s500x550/5c3ca4d8de10255d1ab95941/asset-33x-20200308093307.png" alt=""></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/">Trang chủ</a></li>
             <li><a href="gioithieu">Giới thiệu</a></li>
             <li><a href="product">Sản phẩm</a></li>
             <li><a href="tintuc">Tin tức</a></li>
             <li><a href="collapsible.html">Liên hệ</a></li>
+            <!-- Modal Trigger -->
+            {% if session['user-loggedin'] == True %}
+            <li><a href="#!">{{ session['user-name'] }}</a></li>
+            <li><a href="{{ url_for('logout') }}">Đăng xuất</a></li>
+            {% else %}
+            <li><a class="modal-trigger" href="#modal-login">Đăng nhập</a></li>
+            <li><a class="modal-trigger" href="#modal-signup">Đăng ký</a></li>
+            {% endif %}
         </ul>
     </div>
 </nav>
+{% include '/homepage/modal-login.html' %}
+{% include '/homepage/modal-signup.html' %}
