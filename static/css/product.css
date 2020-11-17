@@ -1,7 +1,7 @@
 #Subheader {
     background-size: cover;
     padding: 240px 0 180px;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     height: 150px;
@@ -10,9 +10,8 @@
 
 #Subheader .title {
     margin-bottom: 0;
-    width: 70%;
-    float: left;
-    color: #16a2d3 !important;
+    float: right;
+    color: #b2dfdb  !important;
     font-size: 70px;
     line-height: 70px;
     font-weight: 400;
