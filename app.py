@@ -1,5 +1,6 @@
 from flask import *
 from models.user import User
+from models.product import Product
 import service
 import db
 
@@ -17,7 +18,8 @@ def about():
 
 @app.route('/product')
 def product():
-    return render_template('product.html')
+    all_products = service.get_display_product()
+    return render_template('product.html', all_products=all_products)
 
 @app.route('/tintuc')
 def tintuc():

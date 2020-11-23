@@ -20,360 +20,76 @@
     <div class="container" style="margin-bottom: 50px;">
         <h3 style="margin-top: 60px; text-align:center" class="cyan-text text-lighten-3">Hot Deal</h3>
         <div class="row">
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light" >
-                        <img class="activator"
-                            src="https://images.foody.vn/res/g104/1034358/s570x570/2c14ffd9-6629-496c-b170-39a687f0-7f6421e3-201005125802.jpeg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua trân châu đường đen<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Cùng với cốc trân châu
-                            đường đen Hàn Quốc thơm ngon và vô cùng hấp dẫn. Sự lựa chọn hoàn hảo cho khách hàng
-                            mọi lứa tuổi.</p>
-                    </div>
-                </div>
-            </div>
+            {% for product in all_products.yogurt_hot_deal %}
             <div class="col s4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="https://images.foody.vn/res/g104/1034358/s570x570/808e74f5-2f6d-48a0-80fb-a80bb8c5-830fd2f5-201005130007.jpeg">
+                        <img class="activator" src="../static/images/product/{{ product.image }}">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa tươi trân châu đường đen<i
+                        <span class="card-title activator grey-text text-darken-4">{{ product.name }}<i
                                 class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
+                        <p>
+                            <a href="#"><span class=" right">{{ product.price }} đ</span>Buy now</a>
+                        </p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Mô tả<i
                                 class="material-icons right">close</i></span>
-                        <p>Sữa tươi nguyên kem béo ngậy cùng với trân châu đường đen Hàn Quốc thơm ngon và vô
-                            cùng mới là sự lựa chọn hoàn hảo cho khách hàng mọi lứa tuổi.</p>
+                        <p>{{ product.description }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="https://images.foody.vn/res/g104/1034358/s570x570/4550a9d3-4e6a-4640-9889-4132be113240.jpeg">
-                    </div>
-                    <div class="card-content";>
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua trân châu Quảng Ninh<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Cùng với cốc trân châu
-                            dai, mềm, ủ trong cốt dừa thơm ngậy. Sự lựa chọn hoàn hảo cho khách hàng mọi lứa tuổi.</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
         <h3 style="margin-top: 60px; text-align:center" class="cyan-text text-lighten-3">Sữa chua</h3>
         <div class="row">
-            <div class="col s4">
+            {% for product in all_products.yogurt %}
+            <div class="col s4" style="margin-bottom: 20px;">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/đào.jpg">
+                        <img class="activator" src="../static/images/product/{{ product.image }}">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua đào<i
+                        <span class="card-title activator grey-text text-darken-4">{{ product.name }}<i
                                 class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Rưới lên trên là 1 lớp
-                            siro đào và topping đào ngâm. Lưu ý: sản phẩm chưa bao gồm trân châu cốt dừa.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/đậu đỏ.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua đậu đỏ<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long.Thêm vào đó là topping
-                            đậu đỏ thơm ngon. Lưu ý: sản phẩm chưa bao gồm trân châu cốt dừa.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/thập cẩm.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua thập cẩm<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Kèm theo là topping đầy ú
-                            ụ, bao gồm: dứa hấu, mít, xoài. Lưu ý: sản phẩm chưa bao gồm trân châu cốt dừa.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/dâu tây.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua dâu tây<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Rưới lên trên là 1 lớp
-                            siro dâu tây kèm theo vài lát dâu tây tươi ngon. Lưu ý: sản phẩm chưa bao gồm trân châu cốt
-                            dừa.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/chanh leo.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua chanh leo<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Rưới lên trên là 1 lớp
-                            siro chanh leo. Lưu ý: sản phẩm chưa bao gồm trân châu cốt dừa.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/xoài.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua xoài<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Kèm theo là topping xoài
-                            thái hạt lựu. Lưu ý: sản phẩm chưa bao gồm trân châu cốt dừa.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/socola.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua socola<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Rưới lên trên là 1 lớp
-                            socola ngọt ngào. Phù hợp với khách hàng thích đồ ngọt. Lưu ý: sản phẩm chưa bao gồm trân
-                            châu cốt dừa.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/nếp cẩm.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua nếp cẩm<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Kèm theo là topping nếp
-                            cẩm dẻo ngon. Lưu ý: sản phẩm chưa bao gồm trân châu cốt dừa.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/matcha.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua matcha<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Rưới lên trên là 1 lớp
-                            matcha trà xanh. Lưu ý: sản phẩm chưa bao gồm trân châu cốt dừa.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/cà phê.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua cà phê<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Rưới lên trên là 1 lớp
-                            cafe thơm ngon. Lưu ý: sản phẩm chưa bao gồm trân châu cốt dừa.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/kiwi.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua kiwi<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Rưới lên trên là 1 lớp
-                            kiwi. Lưu ý: sản phẩm chưa bao gồm trân châu cốt dừa.
+                        <p>
+                            <a href="#"><span class=" right">{{ product.price }} đ</span>Buy now</a>
                         </p>
                     </div>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/sen vàng.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Sữa chua sen vàng<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Mô tả<i
                                 class="material-icons right">close</i></span>
-                        <p>Sữa chua dạng kem, mát dẻo, lại tốt cho sức khỏe, chuẩn vị Hạ Long. Thêm vào đỏ là những
-                            hạt sen vàng thơm ngon. Lưu ý: sản phẩm chưa bao gồm trân
-                            châu cốt dừa.
-                        </p>
+                        <p>{{ product.description }}</p>
                     </div>
                 </div>
             </div>
+            {% endfor %}
         </div>
+
         <h3 style="margin-top: 60px; text-align:center" class="cyan-text text-lighten-3">Món ăn vặt</h3>
         <div class="row">
+            {% for product in all_products.snack %}
             <div class="col s4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="https://images.foody.vn/res/g104/1034358/s570x570/f0a6f67f-28ff-4085-9856-f0426c92bc0d.jpeg">
+                        <img class="activator" src="../static/images/product/{{ product.image }}">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Bò khô<i
-                                class="material-icons right"></i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
+                        <span class="card-title activator grey-text text-darken-4">{{ product.name }}<i
+                                class="material-icons right">more_vert</i></span>
+                        <p>
+                            <a href="#"><span class=" right">{{ product.price }} đ</span>Buy now</a>
+                        </p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">Mô tả<i
                                 class="material-icons right">close</i></span>
+                        <p>{{ product.description }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="../static/images/ga-kho.jpeg" >
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Gà khô<i
-                                class="material-icons right"></i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col s4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator"
-                            src="https://images.foody.vn/res/g104/1034358/s570x570/53f11b16-9de9-4106-8bb7-75e7688b7aac.jpeg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Hướng dương<i
-                                class="material-icons right"></i></span>
-                        <p><a href="#"><i class="material-icons right">favorite</i>Buy now</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Mô tả<i
-                                class="material-icons right">close</i></span>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
