@@ -1,24 +1,34 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems, {
-    fullWidth: true,
-    indicators: true
-  });
-});
+if (document.readyState == 'loading') {
+  document.addEventListener('DOMContentLoaded', ready)
+} else {
+  ready()
+}
 
-document.addEventListener('DOMContentLoaded', function () {
-  const optionsModal = {
-    onOpenStart: () => {
-      $('.warning-msg').text(" ")
-      $('.success-msg').text(" ")
-      $('input').removeClass("invalid valid")
-      $('input').val("")
+function ready() {
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {
+      fullWidth: true,
+      indicators: true
+    });
+  });
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    const optionsModal = {
+      onOpenStart: () => {
+        $('.warning-msg').text(" ")
+        $('.success-msg').text(" ")
+        $('input').removeClass("invalid valid")
+        $('input').val("")
+      }
     }
-  }
-  var elems = document.querySelectorAll('.modal');
-  var instance = M.Modal.init(elems, optionsModal);
-});
+    var elems = document.querySelectorAll('.modal');
+    var instance = M.Modal.init(elems, optionsModal);
+  });
+}
+
 
 $(document).ready(function () {
   console.log("js loaded");
